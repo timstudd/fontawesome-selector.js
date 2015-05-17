@@ -13,7 +13,7 @@
     '.faSelector .fas-icons {' +
       'width: 100%;' +
       'height: 200px;' +
-      'overflow: scroll;' +
+      'overflow-y: scroll;' +
       'margin: 4px 0;' +
       'background-color: #FFF;' +
       'box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;' +
@@ -26,6 +26,7 @@
     '.faSelector .fas-icons i {' +
       'font-size: 20px;' +
       'margin: 5px;' +
+      'cursor: pointer;' +
     '}';
 
   var _proto = {

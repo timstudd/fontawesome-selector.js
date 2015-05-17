@@ -41,7 +41,7 @@
     },
     listen: function(){
       var _this = this;
-      $(this.container).on('click', 'i', function(){
+      $(this.iconsContainer).on('click', 'i', function(){
         var elem = $(this);
         var icon = elem.attr('class').split(' ')[2]; // 0: 'fa', 1: 'fa-fw'
         _this.setSelected(icon);
@@ -86,14 +86,13 @@
       this.container.hide();
     },
     createContainer: function(iconSet){
-      var container = this.getContainer();
-      var iconsContainer = this.getIconsContainer();
       var closeButton = this.getCloseButton();
-      container.append(closeButton);
-      container.append(iconsContainer);
-      iconsContainer.append(this.getIconObjects());
-      $('body').append(container);
-      return container;
+      this.container = this.getContainer();
+      this.iconsContainer = this.getIconsContainer();
+      this.container.append(closeButton);
+      this.container.append(this.iconsContainer);
+      this.iconsContainer.append(this.getIconObjects());
+      $('body').append(this.container);
     },
     positionContainer: function(){
       var elemPosition = this.elem.position();
@@ -124,7 +123,7 @@
       this.conf.targets = this.conf.targets || [this.elem];
       this.fixTargets();
 
-      this.container = this.createContainer();
+      this.createContainer();
       this.positionContainer();
       this.listen();
     }

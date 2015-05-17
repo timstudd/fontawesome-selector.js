@@ -20,7 +20,7 @@ Usage
 Options
 -------
 
-stylesheet: A string with name (can be partial) of stylesheet, default: 'font-awesome.'
+stylesheet: A string with the name (can be partial) of the Font Awesome stylesheet, default: 'font-awesome.'
 
 targets: An array of elements or query selectors to update with changes, default: [this]
 
@@ -28,8 +28,8 @@ Advantages
 ----------
 
 * Very light weight at ~4.5kb
-* Only one file: no need for 
-* No dependencies (apart from jQuery)
+* Only one file
+* No dependencies
 * Not version tied: does not require a re-build or update to use with new versions of Font Awesome
 
 Disadvantages

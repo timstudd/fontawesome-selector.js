@@ -3,6 +3,8 @@ fontawesome-selector.js
 
 Font Awesome Selector is a very light-weight jQuery plugin for selecting/choosing/picking Font Awesome icons.
 
+![Screenshot](http://timstudd.s3.amazonaws.com/faselector.png)
+
 Usage
 -----
 	<script src="fontawesome-selector.min.js"></script>
